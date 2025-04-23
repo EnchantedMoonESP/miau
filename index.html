@@ -1,0 +1,1169 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 114 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://static-global.zingfront.com/extension/avator.png" alt="">
+            <div class="titleInfo">
+              <p>...</p>
+              <p>...</p>
+              <p style="font-size: 15px;">从 2025-04-23T17:10:14.759Z 到 2025-04-23T17:41:01.624Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:10:14 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Heyyy</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:10:18 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Que tal?.</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:11:34 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Bien y usted?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:12:02 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Todo bien</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:12:09 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Si</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:12:19 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Porque me abriste chat?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:12:33 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Solo quería conocerte</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:12:39 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Guay</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:12:47 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> De dónde eres</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:12:55 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pero bueno mejor no hablo</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:13:03 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Porque no?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:13:09 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> A mí también me gustaría conocerte</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:13:18 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Ujum</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:14:05 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No puedo decirte</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:14:16 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> 😐</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:17:40 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Porque no?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:19:47 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pq no</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:19:50 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> U.u</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:20:15 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Ni pais?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:20:25 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment video-attachment">
+                <video controls>
+                  <source src="https://cdn.discordapp.com/attachments/1364630269415522315/1364652143524708404/voice-message.ogg?ex=680a72d9&is=68092159&hm=630ebf98f08c6b2e754dc4219f7d33954f6f54556637d3d93c6c9f22ef6edfde&" type="video/ogg">
+                  Your browser does not support the video element.
+                </video>
+              </div>
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:20:29 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No te puedo decirte</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:20:37 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No me mandes mensaje de voz</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:20:43 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> 😭</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:20:48 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Estoy en clases de literatura</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:21:08 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Tu edad si me la puedes decir?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:21:26 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Bueno eso si</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:21:32 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> 1+8</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:21:40 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> 9 años?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:21:43 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Estás chiquito</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:21:47 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:21:55 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> 18?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:21:56 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Eres una tontita</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:22:00 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Exacto</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:04 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No me insultes jajaja</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:09 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Que tú ni me dices de dónde eres</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:16 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Ya no sé si puedo quedar contigo o no</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:22:19 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pq no quiero</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:25 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Eres de Latam?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:28 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Al menos dime eso</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:22:29 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Para que?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:36 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pues si eres mi amigo para quedar con un amigo</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:22:38 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No soy de este mundo</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:46 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Y de qué planeta eres?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:51 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> O dimensión</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:22:56 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Jajajajaj</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:23:02 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> O sea no soy de ese continente</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:23:12 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> De cual continente</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:23:16 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Ademas no soy de europa</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:23:26 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No eres ni de América ni de Europa?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:23:32 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Y que continente eres</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:23:42 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Soy de latam</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:23:42 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Eres norcoreano?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:23:46 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Ah vale</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:23:47 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Jajajaja</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:23:49 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Gracias</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:24:26 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No que asco</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:24:33 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Jajajaja</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:24:59 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Solo te diré eso soy de latam nada mas</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:25:08 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No te diré mi país</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:25:47 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Vale?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:26:02 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Ni te voy a mandar fotos ni nada de eso</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:27:24 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Mejor ni te hablo</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:27:42 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Porque no me quieres hablar?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:27:47 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Que he hecho mal ya de primeras?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:27:49 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pq no</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:27:52 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Porque actúas tan extraño conmigo?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:27:56 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Te conozco?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:27:57 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No creo</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:28:12 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Por eso</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:28:18 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Yo no te conozco</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:28:25 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pero tú me has abierto chat</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:28:29 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Y me quieres conocer</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:28:30 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Asi que no te hablare</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:28:36 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Yo si te quiero conocer</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:28:40 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Tu mandaste soli</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:28:47 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Vale pues entonces mala mía</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:28:59 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Te la mandé ahora</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:29:04 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Igual te lo cancelé</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:29:04 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> El chat me lo abriste tú</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:29:09 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Está bien</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:29:13 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Tu me mandaste soli primera</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:29:17 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> 😐</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:29:26 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> La verdad, no me acuerdo</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:29:32 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No quiere ser mi amigo entonces?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:30:57 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Porfavor</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:31:03 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Deja de insistirme</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:31:16 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Y yo ya sé lo que le hiciste a mi amigo</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:32:23 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Así que dejaré de hablarte por mala persona que eres</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:32:24 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Que amigo?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:32:34 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> A que amigo te refieres</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:32:36 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No soy tu amigo</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:32:38 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> He sido mala con mucha gente</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:32:44 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> También han sido mucha gente mala conmigo</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:33:10 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Al menos para cubrir una venganza medianamente... Vengativa</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:33:16 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Dime de parte de quién es ese odio</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:33:23 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> A quién hice daño</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:33:27 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No es parte mía</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:33:35 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> De quién es</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:33:59 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Tu conoces a mi otro yo?</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:34:43 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> La que se llama aarón</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:36:03 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> A el</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:36:05 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> carlos23yt2025</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:36:21 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Tu le trataste mal a el</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:36:29 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Asi que no te voy a hablar mas</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:39:11 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No me acordaba de él</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:39:19 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Gracias por decirme cuál es tu otra cuenta</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:39:26 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> ?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:39:27 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Solo dije verdades</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:39:35 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> No es mi otra cuenta</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:39:41 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pues la cuenta de tu otro yo</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:40:14 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Pues tú amigo</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:40:17 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Quién sea</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/866694558296571904/18e8975317acafbcd558112b68eaa8ca.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">enchantedmoonesp</span><span class="time">Wed Apr 23 2025 19:40:48 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Está bien</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aaron23_yt25</span><span class="time">Wed Apr 23 2025 19:41:01 GMT+0200 (hora de verano de Europa central)</span></p>
+          <p><span style="color: skyblue;"></span> Deja de hablarme</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
